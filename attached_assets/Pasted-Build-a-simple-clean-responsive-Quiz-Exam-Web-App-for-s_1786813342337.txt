@@ -1,0 +1,312 @@
+Build a simple, clean, responsive **Quiz / Exam Web App** for studying interview questions.
+
+## Main Goal
+
+I will provide you with a list of questions, multiple-choice answers, and the correct answer.
+
+Your job is to build the complete quiz page and automatically convert my provided questions into the required data structure.
+
+This is a **frontend-only project**. Do NOT use a backend, database, authentication, API, or external server.
+
+Use the simplest reliable technology for this project. Keep the code clean, modular, and easy to edit later.
+
+---
+
+## Quiz Behavior
+
+The application should work like this:
+
+### 1. Start Screen
+
+Show:
+
+* App title: "Interview Quiz"
+* Number of available questions
+* A large **Start Quiz** button
+
+When the user clicks Start Quiz:
+
+* Shuffle ALL questions randomly.
+* Start from question 1.
+
+### 2. Question Screen
+
+Display only ONE question at a time.
+
+Show:
+
+* Question number, e.g. `Question 5 / 50`
+* Current score
+* Progress bar
+* The question
+* Multiple-choice answers
+
+Example:
+
+Question 5 / 50
+
+What is Dependency Injection?
+
+A. ...
+B. ...
+C. ...
+D. ...
+
+The answer choices must be shuffled randomly for every question/session.
+
+Do NOT keep the correct answer in a fixed position.
+
+---
+
+## Answer Logic
+
+When the user selects an answer:
+
+### Correct Answer
+
+If the selected answer is correct:
+
+* Highlight the selected answer as correct.
+* Increase the score by 1.
+* Disable all answer buttons.
+* Show a small "Correct!" message.
+* Show a **Next Question** button.
+
+### Wrong Answer
+
+If the selected answer is wrong:
+
+* Highlight the selected answer as wrong.
+* Immediately reveal/highlight the correct answer.
+* Do NOT increase the score.
+* Disable all answer buttons.
+* Show a clear explanation if one is provided in the data.
+* Show a **Next Question** button.
+
+The user must always be able to clearly see which answer was correct.
+
+---
+
+## Randomization
+
+Implement proper randomization.
+
+Every time the quiz starts:
+
+1. Shuffle the questions.
+2. Shuffle the choices of every question.
+
+When the user clicks Restart:
+
+* Shuffle the questions again.
+* Shuffle the choices again.
+* Reset the score.
+* Reset the question counter.
+* Start a completely new quiz order.
+
+Do NOT simply reverse or rotate the array. Use a proper random shuffle algorithm.
+
+---
+
+## End Screen
+
+After the final question, show a results screen containing:
+
+* Final score
+* Percentage
+* Number of correct answers
+* Number of wrong answers
+* Total questions
+
+Example:
+
+## Quiz Complete 🎉
+
+Score: 37 / 50
+
+74%
+
+Correct: 37
+Wrong: 13
+
+Buttons:
+
+* **Restart Quiz**
+* **Review Wrong Answers**
+
+---
+
+## Review Wrong Answers
+
+Implement a "Review Wrong Answers" mode.
+
+After finishing the quiz, the user can click:
+
+**Review Wrong Answers**
+
+Show only the questions the user answered incorrectly.
+
+For every wrong question show:
+
+* The question
+* The user's selected answer
+* The correct answer
+* Explanation, if available
+
+Add a button:
+
+**Back to Results**
+
+---
+
+## UI / UX
+
+Make the design modern, minimal, and focused on studying.
+
+Requirements:
+
+* Responsive on desktop and mobile.
+* Centered quiz card.
+* Clean typography.
+* Good spacing.
+* Clear answer buttons.
+* Smooth hover effects.
+* Clear correct/wrong states.
+* Progress bar.
+* No unnecessary animations.
+* No distracting graphics.
+
+Use a professional exam/study-app style.
+
+The UI should make it very easy to quickly read a question and answer it.
+
+---
+
+## Important Data Structure
+
+Convert my questions into a structure similar to:
+
+{
+id: 1,
+question: "What is C#?",
+options: [
+"A programming language",
+"A database",
+"An operating system",
+"A web browser"
+],
+correctAnswer: "A programming language",
+explanation: "C# is a modern, object-oriented programming language developed by Microsoft."
+}
+
+The `correctAnswer` must exactly match one of the values inside `options`.
+
+If I provide explanations, include them.
+
+If I don't provide explanations, don't invent long explanations. Keep the explanation empty or omit it.
+
+---
+
+## Important Requirements
+
+* Do not modify the meaning of my questions.
+* Do not modify the correct answers.
+* Do not invent questions.
+* Do not remove questions.
+* Preserve all questions I provide.
+* Make sure every question has exactly one correct answer.
+* Make sure the correct answer exists inside its options.
+* If you detect malformed question data, fix the structure without changing the intended answer.
+* Keep all quiz data in one easy-to-find file so I can add more questions later.
+* Separate quiz logic from quiz data.
+* Avoid unnecessary dependencies.
+* Make the application work immediately after running the project.
+* Test the complete flow before finishing.
+
+---
+
+## Keyboard Support
+
+Add basic keyboard support:
+
+* Number keys `1`, `2`, `3`, `4` select the corresponding answer.
+* `Enter` can move to the next question after answering.
+
+---
+
+## Extra Feature
+
+Add a small toggle:
+
+**Shuffle Questions: ON/OFF**
+
+Default: ON.
+
+If OFF:
+
+* Keep the original question order.
+* Still shuffle the answer choices.
+
+Also add:
+
+**Shuffle Answers: ON/OFF**
+
+Default: ON.
+
+---
+
+## Question Navigation
+
+Do NOT allow the user to skip questions before answering.
+
+After answering, the user must click:
+
+**Next Question**
+
+to continue.
+
+Do not allow changing the answer after submitting it.
+
+---
+
+## Persistence
+
+Use browser `localStorage` only if useful.
+
+If the page is refreshed during a quiz, preserve:
+
+* Current question
+* Score
+* Quiz order
+* Selected answers
+
+However, make sure **Restart Quiz** completely clears the current quiz state and starts a new randomized session.
+
+---
+
+## Code Quality
+
+Before finishing:
+
+1. Check for runtime errors.
+2. Check that all questions load correctly.
+3. Check that randomization works.
+4. Check that correct/wrong answers work.
+5. Check score calculation.
+6. Check Restart.
+7. Check Review Wrong Answers.
+8. Check mobile responsiveness.
+9. Check that no question disappears.
+10. Check that no correct answer is missing from its options.
+
+Do not stop at creating the UI. Make the entire quiz fully functional.
+
+---
+
+# MY QUESTIONS
+
+I will paste my questions and answers below.
+
+Use ALL of them:
+
+[PASTE MY QUESTIONS HERE]

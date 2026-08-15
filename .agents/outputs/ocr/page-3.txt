@@ -1,0 +1,13 @@
+Question 3 of 42
+
+An investor bought €10.00 worth of shares One year later, the investor sold the shares for €13.000
+What is the investor’s return on investment (ROI) ?
+
+0 A| 23%
+
+0O B, 30%
+
+O C| 77%
+
+0 D. 130%
+

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Interview Quiz"
+description = "A responsive frontend-only study quiz for business and entrepreneurship interview questions, with randomized sessions, scoring, wrong-answer review, keyboard controls, and local progress recovery."
+version = "1.0.0"
+id = "artifacts/interview-quiz"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18112
+
+[services.development]
+run = "pnpm --filter @workspace/interview-quiz run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/interview-quiz", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/interview-quiz/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18112"
+BASE_PATH = "/"

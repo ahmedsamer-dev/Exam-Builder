@@ -1,0 +1,13 @@
+Question 35 of 42
+
+You need to determine the timing of each element of the sales process
+
+For each element, select whether it occurs Before the sales pitch or After the sales pitch
+Note : you will receive partial credit for each correct selection
+
+Answer Area Before the sales pitch After the sales pitch
+prospect ® ©)
+Follow up (@) @
+Approach @ @)
+
+Overcome objections O @&

@@ -1,0 +1,14 @@
+Question 27 of 42
+
+You own a mobile food stand . You sell each food item for €2.50 you need to determine your monthly break-even point
+
+* Monthly Expenses : €600
+* Cost to produce each food item : €1
+
+How many food items do you need to sell each month to break even ?
+
+0 A 172
+O B.|240
+® C.| 400
+O D.| 600
+

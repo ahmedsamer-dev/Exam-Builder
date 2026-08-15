@@ -1,0 +1,32 @@
+Question 8 of 42
+
+You are examining your year-end financial information for your business
+
+According to the information, what is your equity in the business?
+For year ending 31 December
+Assets
+* Cash €15,000
+* Inventory €2,000
+* Equipment €10,000
+
+Total Assets : €27,000
+
+Liabilities
+
+* Credit card balance €3,500
+
+* Long-term debt €0
+
+* Unearned revenues €2,500
+
+Total liabilities €6,000
+
+O A. €6,000
+
+O B. €15,000
+
+® C. | €21,000
+
+O D.| €27,000
+. _____________________________________________________|
+

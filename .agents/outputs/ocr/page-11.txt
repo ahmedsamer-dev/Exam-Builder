@@ -1,0 +1,33 @@
+Question 11 of 42
+
+Move each compensation type from the list on the left to its description on the right
+
+Note : You will receive partial credit for each correct answer
+
+Compensation types
+
+commission
+
+Hourly
+
+piecework
+
+salary
+
+Descriptions
+
+An employee who receives payment after completing a sale
+An employee who receives a set amount for each unit created
+An employee who receives overtime pay for working extra time
+
+An employee who receives a set wage each week without
+overtime pay for extra time
+
+commission
+
+piecework
+
+Hourly
+
+salary
+
